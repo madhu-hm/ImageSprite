@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height:100%;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+h3{
+    color: grey;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0;
+}
+
+.logo{
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+}
+
+.sidebar {
+    width: 350px;
+    height: 100%;
+    position: fixed;
+    background:white;
+    padding: 20px;
+  }
+
+  .sidebar label {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+    color: #007bff;
+  }
+
+  .sidebar label:hover {
+    background-color: #e0e0e0;
+  }
+
+  .main {
+    flex: 1;
+    margin-left: 350px;
+    height: 100%;
+    padding: 60px;
+    background-color: #f9f9f9;
+  }
+
+  .tools-grid {
+    display: none;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+  }
+
+  input[type="radio"] {
+    display: none;
+  }
+
+  input#sales:checked ~ .main #sales-tools,
+  input#marketing:checked ~ .main #marketing-tools,
+  input#commerce:checked ~ .main #commerce-tools,
+  input#service:checked~ .main #service-tools{
+    display: grid;
+  }
+
+  .tool-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease,border-color 0.2s ease;
+  }
+
+  .tool-card:hover {
+    transform: translateY(-5px);
+    border-color: #007bff;
+  }
+
+  .tool-card h4 {
+    margin-bottom: 10px;
+    font-size: larger;
+  }
+
+  .tool-card p {
+    font-size: 20px;
+    color: #555;
+  }
+
+  .tool-card a {
+    margin-top: 10px;
+    display: inline-block;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .tool-logo {
+    width: 40px;
+    height: 40px;
+    background-image: url('zohoproducts.jpg');
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+  }
+
+  .crm{
+    background-position: -874px -27px; 
+    width: 103px;
+    height: 65px;
+  }
+  .bigin{
+    background-position: -1204px -225px; 
+    width: 94px;
+    height: 104px;
+  }
+  .forms{
+    background-position: -1528px -8px; 
+    width: 98px;
+    height: 104px;
+  }
+  .salesiq{
+    background-position: -982px -9px; 
+    width: 105px;
+    height: 103px;
+  }
+  .bookings{
+    background-position: -872px -226px; 
+    width: 104px;
+    height: 102px;
+  }
+  .sign{
+    background-position: -1748px -9px; 
+    width: 94px;
+    height: 102px;
+  }
+  .routeiq{
+    background-position: -881px -442px; 
+    width: 86px;
+    height: 104px;
+  }
+  .thrive{
+    background-position: -769px -443px; 
+    width: 93px;
+    height: 101px;
+  }
+  .voice{
+    background-position: -768px -335px; 
+    width: 96px;
+    height: 104px;
+  }
+  .social{
+    background-position: -1308px -8px; 
+    width: 103px;
+    height: 105px;
+  }
+  .campaigns{
+    background-position: -1200px -11px; 
+    width: 102px;
+    height: 98px;
+  }
+  .survey{
+    background-position: -439px -444px; 
+    width: 101px;
+    height: 103px;
+  }
+  .sites{
+    background-position: -1634px -12px; 
+    width: 107px;
+    height: 96px;
+  }
+  .pagesense{
+    background-position: -652px -447px; 
+    width: 110px;
+    height: 94px;
+  }
+  .backstage{
+    background-position: -1422px -9px; 
+    width: 93px;
+    height: 101px;
+  }
+  .webinar{
+    background-position: -1308px -448px; 
+    width: 106px;
+    height: 92px;
+  }
+  .marketingautomation{
+    background-position: -978px -232px; 
+    width: 110px;
+    height: 93px;
+  }
+  .landingpage{
+    background-position: -878px -332px; 
+    width: 95px;
+    height: 108px;
+  }
+  .publish{
+    background-position: -340px -552px; 
+    width: 78px;
+    height: 102px;
+  }
+  .communityspaces{
+    background-position: -554px -558px; 
+    width: 89px;
+    height: 86px;
+  }
+  .commerce{
+    background-position: -764px -226px; 
+    width: 103px;
+    height: 103px;
+  }
+  .desk{
+    background-position: -1862px -9px; 
+    width: 84px;
+    height: 99px;
+  }
+  .assist{
+    background-position: -1962px -8px; 
+    width: 102px;
+    height: 104px;
+  }
+  .lens{
+    background-position: -1307px -224px; 
+    width: 105px;
+    height: 106px;
+  }
+  .fsm{
+    background-position: -3px -561px; 
+    width: 105px;
+    height: 81px;
+  }
